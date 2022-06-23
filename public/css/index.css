@@ -1,0 +1,42 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin:0;
+    background-color: #efefef;
+}
+header{
+    background-color: darkcyan;
+    padding: 3rem 2rem;
+}
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+.articulos{
+    border: 2rem;
+    display: inline-block;
+    text-align: center;
+    
+}
+.img{
+    width: 500px;
+    height: 500px;
+    padding: 4px;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 2rem
+}
+section article{
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
