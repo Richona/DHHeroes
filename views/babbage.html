@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <LINK REL=StyleSheet HREF="/css/babbage.css" TYPE="text/css" MEDIA=screen>
+    <LINK REL=StyleSheet HREF="/css/index.css" TYPE="text/css" MEDIA=screen>
     <title>TP Heroes/babbage</title>
 </head>
 
-<body>
+<body class="babbage">
     <header>
+        <div>
+            <a href="/"><img id="logo" src="/img/logo.png" alt=""></a>
+        </div>
         <h1>Heroes</h1>
-        <nav>
+        <nav id="nav">
             <a href="/">Home</a>
             <a href="berners-lee">Berners-lee</a>
             <a href="clarke">Clarke</a>
@@ -21,66 +24,80 @@
             <a href="lovelace">Lovelace</a>
             <a href="turing">Turing</a>
         </nav>
-        <h2 id="inicio">Babbage</h2>
-        <img src="/img/babbage.jpg" alt="babbage">
-        <hr>
     </header>
-    <main>
-        <article>
-            <p><b>Charles Babbage</b> fue un matemático y científico de la computación británico.​Diseñó y desarrolló
-                una calculadora mecánica capaz de calcular tablas de funciones numéricas por el método de diferencias.
-                También diseñó, (pero nunca construyó), la analítica para ejecutar programas de tabulación o
-                computación; por estos inventos se le considera como una de las primeras personas en concebir la idea de
-                lo que hoy llamaríamos una computadora, por lo que se le considera como "Alguien". En el Museo de
-                Ciencias de Londres se exhiben partes de sus mecanismos inconclusos. Parte de su cerebro conservado en
-                formol se exhibe en el Royal College of Surgeons of England. Sitio en Londres.​</p>
-        </article>
-        <nav style="border: solid; display: inline-block;">
-            <ol>
-                <li><a href="#historia">Historia</a></li>
-                <ol start="1.1">
-                    <li><a href="#primeros-años">Primeros años</a></li>
-                    <li><a href="#primeros-años-en-cambridge">Primeros años en cambridge</a></li>
-                    <li><a href="#despues-de-cambridge">Despues de cambridge</a></li>
+    <main class="babbage__main">
+        <section class="babbage__main__titulo">
+            <h2 id="inicio">Babbage</h2>
+            <div class="babbage__main__titulo__imagen">
+                <img src="/img/babbage.jpg" alt="babbage">
+            </div>
+        </section>
+        <section class="babbage__main__seccion">
+            <article class="babbage__main__seccion__parrafo">
+                <p><b>Charles Babbage</b> fue un matemático y científico de la computación británico.​Diseñó y
+                    desarrolló
+                    una calculadora mecánica capaz de calcular tablas de funciones numéricas por el método de
+                    diferencias.
+                    También diseñó, (pero nunca construyó), la analítica para ejecutar programas de tabulación o
+                    computación; por estos inventos se le considera como una de las primeras personas en concebir la
+                    idea de
+                    lo que hoy llamaríamos una computadora, por lo que se le considera como "Alguien". En el Museo de
+                    Ciencias de Londres se exhiben partes de sus mecanismos inconclusos. Parte de su cerebro conservado
+                    en
+                    formol se exhibe en el Royal College of Surgeons of England. Sitio en Londres.​</p>
+            </article>
+            <nav class="babbage__main__seccion__navegacion">
+                <ol class="babbage__main__presentacion__navegacion__lista">
+                    <li><a href="#historia">Historia</a></li>
+                    <ol start="1.1">
+                        <li><a href="#primeros-años">Primeros años</a></li>
+                        <li><a href="#primeros-años-en-cambridge">Primeros años en cambridge</a></li>
+                        <li><a href="#despues-de-cambridge">Despues de cambridge</a></li>
+                    </ol>
+                    <li><a href="#diseño-computadoras">Diseño de computadoras</a></li>
+                    <li><a href="#maquina-analitica">Maquina analítica</a></li>
+                    <li><a href="#Planos-de-la-impresora-moderna">Planos de la impresora moderna</a></li>
+                    <li><a href="#Promoción-del-cálculo">Promocion del calculo</a></li>
+                    <li><a href="#Criptografía">Criptografia</a></li>
+                    <li><a href="#economia">Economia, principio de Babbage</a></li>
+                    <li><a href="#Otros-logros">Otros logros</a></li>
+                    <li><a href="#Eponimia">Eponimia</a></li>
+                    <li><a href="#Véase-también">Vease tambien</a></li>
+                    <li><a href="#Referencias">Referencias</a></li>
+                    <ol>
+                        <li><a href="#Bibliografia">Bibliografia</a></li>
+                    </ol>
+                    <li><a href="#Enlaces-externos">Enlaces externos</a></li>
                 </ol>
-                <li><a href="#diseño-computadoras">Diseño de computadoras</a></li>
-                <li><a href="#maquina-analitica">Maquina analítica</a></li>
-                <li><a href="#Planos-de-la-impresora-moderna">Planos de la impresora moderna</a></li>
-                <li><a href="#Promoción-del-cálculo">Promocion del calculo</a></li>
-                <li><a href="#Criptografía">Criptografia</a></li>
-                <li><a href="#economia">Economia, principio de Babbage</a></li>
-                <li><a href="#Otros-logros">Otros logros</a></li>
-                <li><a href="#Eponimia">Eponimia</a></li>
-                <li><a href="#Véase-también">Vease tambien</a></li>
-                <li><a href="#Referencias">Referencias</a></li>
-                <ol>
-                    <li><a href="#Bibliografia">Bibliografia</a></li>
-                </ol>
-                <li><a href="#Enlaces-externos">Enlaces externos</a></li>
-            </ol>
-        </nav>
-        <section>
+            </nav>
+        </section>
+        <section class="babbage__main__historia">
             <h2 id="historia">Historia</h2>
             <hr>
-            <article>
-                <h3 id="primeros-años">Primeros años</h3>
-                <p>Hay un debate sobre la fecha y lugar de nacimiento de Babbage. En primer lugar, según Dictionary
+            <article class="babbage__main__historia__primerosaños">
+                <h3 class="babbage__main__historia__primerosaños__titulo" id="primeros-años">Primeros años</h3>
+                <p class="babbage__main__historia__primerosaños__parrafo">Hay un debate sobre la fecha y lugar de
+                    nacimiento de Babbage. En primer lugar, según Dictionary
                     of National Biography seguramente nació en el número 44 de Crosby Row, Walworth en Londres,
                     Inglaterra.​ En relación a su fecha de nacimiento, The Times publicó que Babbage nació el 26 de
                     diciembre de 1792 pero un sobrino suyo afirmó que fue un año antes, 1791. El registro de la
                     parroquia St. Mary's en Newington establece que Babbage fue bautizado el 6 de enero de 1792, lo
                     cual puede confirmar que hubiese nacido un año antes. </p>
             </article>
-            <article>
-                <h3 id="primeros-años-en-cambridge">Primeros años en cambridge</h3>
-                <p>En octubre de 1810 Babbage llegó a Trinity College (Cambridge), habiéndose formado de forma
+            <article class="babbage__main__historia__primerosañosencam">
+                <h3 class="babbage__main__historia__primerosañosencam__titulo" id="primeros-años-en-cambridge">Primeros
+                    años en cambridge</h3>
+                <p class="babbage__main__historia__primerosañosencam__parrafo">En octubre de 1810 Babbage llegó a
+                    Trinity College (Cambridge), habiéndose formado de forma
                     autodidacta en matemáticas contemporáneas​ (A partir de las lecturas de Robert Woodhouse,
                     Joseph-Louis Lagrange y Maria Gaetana Agnesi). Consecuentemente se llevó una gran decepción con
                     la forma de impartir las matemáticas de la universidad.</p>
             </article>
-            <article>
-                <h3 id="despues-de-cambridge">Después de Cambridge</h3>
-                <p>Dada su reputación, Babbage consiguió progresar rápidamente. Impartió clases de astronomía en el
+            <article class="babbage__main__historia__despuesdecam">
+                <h3 class="babbage__main__historia__despuesdecam__titulo" id="despues-de-cambridge">Después de Cambridge
+                </h3>
+                <p class="babbage__main__historia__despuesdecam__parrafo">Dada su reputación, Babbage consiguió
+                    progresar rápidamente. Impartió clases de astronomía en el
                     Royal Institution en 1815 y fue elegido Miembro de la Royal Society en 1816.​ Sin embargo, al
                     presentarse a las oposiciones tras su graduación no fue aceptado. En 1816 fue candidato para ser
                     profesor en Haileybury College, con cartas de recomendación de James Ivory y John Playfair, pero
@@ -89,179 +106,196 @@
                     franceses. Ese mismo año aplicó a la Universidad de Edimburgo recomendado por Pierre-Simon
                     Laplace, perdiendo de nuevo el puesto por William Wallace, matemático y astrónomo escocés.</p>
             </article>
-            <footer>
+            <footer class="babbage__main__historia__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </section>
-        <article>
-            <h2 id="diseño-computadoras">Diseño de computadoras</h2>
+        <article class="babbage__main__diseñodecomputadores">
+            <h2 class="babbage__main__diseñodecomputadores__tituto" id="diseño-computadoras">Diseño de computadoras</h2>
             <hr>
-            <div>
-                <p>
-                    Babbage intentó encontrar un método por el cual se pudieran hacer cálculos automáticamente por una
-                    máquina, eliminando errores debidos a la fatiga o aburrimiento que sufrían las personas encargadas
-                    de compilar las tablas matemáticas de la época. Esta idea la tuvo en 1812. Tres factores parecieron
-                    haberlo motivado: una aversión al desorden, su conocimiento de tablas logarítmicas, y los trabajos
-                    de máquinas calculadoras realizadas por Blaise Pascal y Gottfried Leibniz. En 1822, en una carta
-                    dirigida a sir Humphry Davy en la aplicación de maquinaria al cálculo e impresión de tablas
-                    matemáticas, discutió los principios de una máquina calculadora. Además diseñó un plano de
-                    computadoras.
-                </p>
-            </div>
-            <footer>
+            <p class="babbage__main__diseñodecomputadores__parrafo">
+                Babbage intentó encontrar un método por el cual se pudieran hacer cálculos automáticamente por
+                una
+                máquina, eliminando errores debidos a la fatiga o aburrimiento que sufrían las personas
+                encargadas
+                de compilar las tablas matemáticas de la época. Esta idea la tuvo en 1812. Tres factores
+                parecieron
+                haberlo motivado: una aversión al desorden, su conocimiento de tablas logarítmicas, y los
+                trabajos
+                de máquinas calculadoras realizadas por Blaise Pascal y Gottfried Leibniz. En 1822, en una carta
+                dirigida a sir Humphry Davy en la aplicación de maquinaria al cálculo e impresión de tablas
+                matemáticas, discutió los principios de una máquina calculadora. Además diseñó un plano de
+                computadoras.
+            </p>
+            <footer class="babbage__main__diseñodecomputadores__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="maquina-analitica">Máquina analítica</h2>
+        <article class="babbage__main__maquina-analitica">
+            <h2 class="babbage__main__maquina-analitica__titulo" id="maquina-analitica">Máquina analítica</h2>
             <hr>
-            <div>
-                <p>
-                    Entre 1833 y 1842, Babbage lo intentó de nuevo; esta vez, intentó construir una máquina que fuese
-                    programable para hacer cualquier tipo de cálculo, no solo los referentes al cálculo de tablas
-                    logarítmicas o funciones polinómicas. Esta fue la máquina analítica. El diseño se basaba en el telar
-                    de Joseph Marie Jacquard, el cual usaba tarjetas perforadas para realizar diseños en el tejido.
-                    Babbage adaptó su diseño para conseguir calcular funciones analíticas. La máquina analítica tenía
-                    dispositivos de entrada basados en las tarjetas perforadas de Jacquard, un procesador aritmético,
-                    que calculaba números, una unidad de control que determinaba qué tarea debía ser realizada, un
-                    mecanismo de salida y una memoria donde los números podían ser almacenados hasta ser procesados. Se
-                    considera que la máquina analítica de Babbage fue la primera computadora de la historia. En 1835
-                    término el diseño inicial completamente funcional. Sin embargo, debido a problemas similares a los
-                    de la máquina diferencial, la máquina analítica nunca fue terminada por Charles. En 1842, para
-                    obtener la financiación necesaria para realizar su proyecto, Babbage contactó con sir Robert Peel.
-                    Peel lo rechazó, y ofreció a Babbage un título de caballero que fue rechazado por Babbage. Lady Ada
-                    Lovelace, matemática e hija de Lord Byron, se enteró de los esfuerzos de Babbage y se interesó en su
-                    máquina. Promovió activamente la máquina analítica, y escribió varios programas para la máquina
-                    analítica. Algunos historiadores afirman que esas instrucciones hacen de Ada Lovelace la primera
-                    programadora de computadoras de la historia.
-                </p>
-            </div>
-            <footer>
+            <p class="babbage__main__maquina-analitica__parrafo">
+                Entre 1833 y 1842, Babbage lo intentó de nuevo; esta vez, intentó construir una máquina que
+                fuese
+                programable para hacer cualquier tipo de cálculo, no solo los referentes al cálculo de tablas
+                logarítmicas o funciones polinómicas. Esta fue la máquina analítica. El diseño se basaba en el
+                telar
+                de Joseph Marie Jacquard, el cual usaba tarjetas perforadas para realizar diseños en el tejido.
+                Babbage adaptó su diseño para conseguir calcular funciones analíticas. La máquina analítica
+                tenía
+                dispositivos de entrada basados en las tarjetas perforadas de Jacquard, un procesador
+                aritmético,
+                que calculaba números, una unidad de control que determinaba qué tarea debía ser realizada, un
+                mecanismo de salida y una memoria donde los números podían ser almacenados hasta ser procesados.
+                Se
+                considera que la máquina analítica de Babbage fue la primera computadora de la historia. En 1835
+                término el diseño inicial completamente funcional. Sin embargo, debido a problemas similares a
+                los
+                de la máquina diferencial, la máquina analítica nunca fue terminada por Charles. En 1842, para
+                obtener la financiación necesaria para realizar su proyecto, Babbage contactó con sir Robert
+                Peel.
+                Peel lo rechazó, y ofreció a Babbage un título de caballero que fue rechazado por Babbage. Lady
+                Ada
+                Lovelace, matemática e hija de Lord Byron, se enteró de los esfuerzos de Babbage y se interesó
+                en su
+                máquina. Promovió activamente la máquina analítica, y escribió varios programas para la máquina
+                analítica. Algunos historiadores afirman que esas instrucciones hacen de Ada Lovelace la primera
+                programadora de computadoras de la historia.
+            </p>
+            <footer class="babbage__main__maquina-analitica__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="Planos-de-la-impresora-moderna">Planos de la impresora moderna</h2>
+        <article class="babbage__main__planos-impresora-moderna">
+            <h2 class="babbage__main__planos-impresora-moderna__titulo" id="Planos-de-la-impresora-moderna">Planos de la
+                impresora moderna</h2>
             <hr>
-            <div>
-                <p>
-                    Charles Babbage ha sido considerado por algunos como el padre de las computadoras modernas, pero sin
-                    duda también puede ser considerado el padre de las impresoras modernas. Más de 150 años después de
-                    sus planos y un trabajo minucioso del Museo de Ciencias de Londres, dieron como resultado la
-                    construcción de la Máquina Analítica. Los planos del matemático y científico incluían un componente
-                    de impresión, el cual ha sido reconstruido por el Museo y es funcional. Esta impresora consta de
-                    8000 piezas mecánicas y pesa aproximadamente 2,5 toneladas.
-                </p>
-            </div>
-            <footer>
+            <p class="babbage__main__planos-impresora-moderna__parrafo">
+                Charles Babbage ha sido considerado por algunos como el padre de las computadoras modernas, pero
+                sin
+                duda también puede ser considerado el padre de las impresoras modernas. Más de 150 años después
+                de
+                sus planos y un trabajo minucioso del Museo de Ciencias de Londres, dieron como resultado la
+                construcción de la Máquina Analítica. Los planos del matemático y científico incluían un
+                componente
+                de impresión, el cual ha sido reconstruido por el Museo y es funcional. Esta impresora consta de
+                8000 piezas mecánicas y pesa aproximadamente 2,5 toneladas.
+            </p>
+            <footer class="babbage__main__planos-impresora-moderna__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="Promoción-del-cálculo">Promoción del cálculo</h2>
+        <article class="babbage__main__promocion-calculo">
+            <h2 class="babbage__main__promocion-calculo__titulo" id="Promoción-del-cálculo">Promoción del cálculo</h2>
             <hr>
-            <div>
-                <p>
-                    Babbage es recordado también por otros logros. La promoción del cálculo infinitesimal es quizás la
-                    primera entre ellas. En 1812, Babbage funda la Sociedad Analítica. La tarea primordial de esta
-                    sociedad, conducida por el estudiante Robert Woodhouse, era promover el cálculo leibniziano, o
-                    cálculo analítico, sobre el estilo de cálculo newtoniano. El cálculo de Newton era torpe y
-                    aproximado, y era usado más por razones políticas que prácticas. La Sociedad Analítica incluía a sir
-                    John Herschel y George Peacock entre sus miembros. En los años 1815-1817 contribuyó en el «cálculo
-                    de funciones» de las Philosophical Transactions -transacciones filosóficas-, y en 1816 fue hecho
-                    miembro de la Royal Society.
-                </p>
-            </div>
-            <footer>
+            <p class="babbage__main__promocion-calculo__parrafo">
+                Babbage es recordado también por otros logros. La promoción del cálculo infinitesimal es quizás
+                la
+                primera entre ellas. En 1812, Babbage funda la Sociedad Analítica. La tarea primordial de esta
+                sociedad, conducida por el estudiante Robert Woodhouse, era promover el cálculo leibniziano, o
+                cálculo analítico, sobre el estilo de cálculo newtoniano. El cálculo de Newton era torpe y
+                aproximado, y era usado más por razones políticas que prácticas. La Sociedad Analítica incluía a
+                sir
+                John Herschel y George Peacock entre sus miembros. En los años 1815-1817 contribuyó en el
+                «cálculo
+                de funciones» de las Philosophical Transactions -transacciones filosóficas-, y en 1816 fue hecho
+                miembro de la Royal Society.
+            </p>
+            <footer class="babbage__main__promocion-calculo__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="Criptografía">Criptografía</h2>
+        <article class="babbage__main__criptografia">
+            <h2 class="babbage__main__criptografia__titulo" id="Criptografía">Criptografía</h2>
             <hr>
-            <div>
-                <p>
-                    Charles Babbage también logró resultados notables en criptografía. Rompió la cifra auto llave de
-                    Vigenère,21​ así como la cifra mucho más débil que se llama cifrado de Vigenère hoy en día. La cifra
-                    del auto llave fue llamada «la cifra indescifrable», aunque debido a la confusión popular muchos
-                    pensaron que la cifra apolialfabética más débil era indescifrable. El descubrimiento de Babbage fue
-                    usado en campañas militares inglesas, y era considerado un secreto militar. Como resultado, el
-                    mérito por haber descifrado esta clave le fue otorgado a Friedrich Kasiski, quien descifró también
-                    este sistema criptográfico algunos años después.
-                </p>
-            </div>
-            <footer>
+            <p class="babbage__main__criptografia__parrafo">
+                Charles Babbage también logró resultados notables en criptografía. Rompió la cifra auto llave de
+                Vigenère,21​ así como la cifra mucho más débil que se llama cifrado de Vigenère hoy en día. La
+                cifra
+                del auto llave fue llamada «la cifra indescifrable», aunque debido a la confusión popular muchos
+                pensaron que la cifra apolialfabética más débil era indescifrable. El descubrimiento de Babbage
+                fue
+                usado en campañas militares inglesas, y era considerado un secreto militar. Como resultado, el
+                mérito por haber descifrado esta clave le fue otorgado a Friedrich Kasiski, quien descifró
+                también
+                este sistema criptográfico algunos años después.
+            </p>
+            <footer class="babbage__main__criptografia__parrafo">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="economia">Economía, principio de Babbage</h2>
+        <article class="babbage__main__economia">
+            <h2 class="babbage__main__economia__titulo" id="economia">Economía, principio de Babbage</h2>
             <hr>
-            <div>
-                <p>
-                    Publicó la obra "On the Economy of Machinery and Manufactures" (Sobre la economía de la maquinaria y
-                    las manufacturas) (1832), sobre la organización y el diseño racional de la producción industrial. El
-                    libro tuvo buenas ventas y tuvo incidencia en la investigación operativa que por entonces era una
-                    incipiente disciplina. En ella describió lo que hoy día se conoce como el principio de Babbage 22​,
-                    enfocado a lograr ventajas comerciales a partir de una más cuidadosa división del trabajo
-                </p>
-            </div>
-            <footer>
+            <p class="babbage__main__economia__parrafo">
+                Publicó la obra "On the Economy of Machinery and Manufactures" (Sobre la economía de la
+                maquinaria y
+                las manufacturas) (1832), sobre la organización y el diseño racional de la producción
+                industrial. El
+                libro tuvo buenas ventas y tuvo incidencia en la investigación operativa que por entonces era
+                una
+                incipiente disciplina. En ella describió lo que hoy día se conoce como el principio de Babbage
+                22​,
+                enfocado a lograr ventajas comerciales a partir de una más cuidadosa división del trabajo
+            </p>
+            <footer class="babbage__main__economia__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="Otros-logros">Otros logros</h2>
+        <article class="babbage__main__otros-logros">
+            <h2 class="babbage__main__otros-logros__titulo" id="Otros-logros">Otros logros</h2>
             <hr>
-            <div>
-                <p>
-                    De 1828 a 1839 Babbage fue profesor de matemáticas en Cambridge. Escribió artículos en distintas
-                    revistas científicas, y era miembro activo de la Astronomical Society —sociedad astronómica— en 1820
-                    y de la Statistical Society —sociedad estadística— en 1834. Durante los últimos años de su vida
-                    residió en Londres, dedicándose a la construcción de máquinas capaces de la ejecución de operaciones
-                    aritméticas y cálculos algebraicos.
-                </p>
-            </div>
-            <footer>
+            <p class="babbage__main__otros-logros__parrafo">
+                De 1828 a 1839 Babbage fue profesor de matemáticas en Cambridge. Escribió artículos en distintas
+                revistas científicas, y era miembro activo de la Astronomical Society —sociedad astronómica— en
+                1820
+                y de la Statistical Society —sociedad estadística— en 1834. Durante los últimos años de su vida
+                residió en Londres, dedicándose a la construcción de máquinas capaces de la ejecución de
+                operaciones
+                aritméticas y cálculos algebraicos.
+            </p>
+            <footer class="babbage__main__otros-logros__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
+        <article class="babbage__main__eponimia">
             <h2 id="Eponimia">Eponimia</h2>
             <hr>
-            <div>
-                <ul>
+            <div class="babbage__main__eponimia__lista">
+                <ul class="babbage__main__eponimia__lista__desordenada">
                     <li>El cráter lunar Babbage lleva este nombre en su memoria.</li>
                     <li>El asteroide (11341) Babbage también conmemora su nombre.</li>
                 </ul>
             </div>
-            <footer>
+            <footer class="babbage__main__eponimia__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="Véase-también">Véase también</h2>
+        <article class="babbage__main__vease-tambien">
+            <h2 class="babbage__main__vease-tambien__titulo" id="Véase-también">Véase también</h2>
             <hr>
-            <div>
-                <ul>
+            <div class="babbage__main__vease-tambien__lista">
+                <ul class="babbage__main__vease-tambien__lista__desordenada">
                     <li>Máquina diferencial</li>
                     <li>Máquina analítica</li>
                     <li><a href="lovelace">Ada Lovelace</a></li>
                 </ul>
             </div>
-            <footer>
+            <footer class="babbage__main__vease-tambien__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="Referencias">Referencias</h2>
+        <article class="babbage__main__referencias">
+            <h2 class="babbage__main__referencias__titulo" id="Referencias">Referencias</h2>
             <hr>
-            <div>
-                <ol>
-                    <li> «Charles Babbage; Biography & Facts». Encyclopedia Britannica (en inglés). Consultado el 17 de
+            <div class="babbage__main__referencias__lista">
+                <ol class="babbage__main__referencias__lista__ordenada">
+                    <li> «Charles Babbage; Biography & Facts». Encyclopedia Britannica (en inglés). Consultado el 17
+                        de
                         marzo de 2018.</li>
                     <li>«¿Sabías que… el museo de Ciencias de Londres conserva medio cerebro de Charles Babbage en
-                        formol?». Mundo Geek. Archivado desde el original el 17 de marzo de 2018. Consultado el 17 de
+                        formol?». Mundo Geek. Archivado desde el original el 17 de marzo de 2018. Consultado el 17
+                        de
                         marzo de 2018.</li>
                     <li> Swade, Doron. «"Babbage, Charles"» |url= incorrecta con autorreferencia (ayuda). En Oxford
                         University Press, ed. Oxford Dictionary of National Biography.</li>
@@ -270,46 +304,52 @@
                     <li>Moseley, Maboth (1964). Irascible Genius: A Life of Charles Babbage, Inventor (en inglés).
                         Hutchinson & Company. Consultado el 19 de noviembre de 2018.</li>
                     <li> The LATE MR. CHARLES BABBAGE, F.R.S.. Consultado el 19 de noviembre de 2018.</li>
-                    <li>«PRAED, William (1747-1833), of Tyringham, Bucks. and Trevethoe, nr. St. Ives, Corn . | History
-                        of Parliament Online». www.historyofparliamentonline.org. Consultado el 19 de noviembre de 2018.
+                    <li>«PRAED, William (1747-1833), of Tyringham, Bucks. and Trevethoe, nr. St. Ives, Corn . |
+                        History
+                        of Parliament Online». www.historyofparliamentonline.org. Consultado el 19 de noviembre de
+                        2018.
                     </li>
                     <li> Moseley, Maboth (1964). Irascible Genius: A Life of Charles Babbage, Inventor (en inglés).
                         Hutchinson & Company. Consultado el 21 de noviembre de 2018.</li>
                     <li> Hyman, Anthony (1982). Charles Babbage: Pioneer of the Computer (en inglés). Princeton
                         University Press. ISBN 0691023778. Consultado el 21 de noviembre de 2018.</li>
-                    <li> Collier, Bruce; MacLachlan, James (28 de septiembre de 2000). Charles Babbage: And the Engines
-                        of Perfection (en inglés). Oxford University Press, USA. ISBN 9780195142877. Consultado el 21 de
+                    <li> Collier, Bruce; MacLachlan, James (28 de septiembre de 2000). Charles Babbage: And the
+                        Engines
+                        of Perfection (en inglés). Oxford University Press, USA. ISBN 9780195142877. Consultado el
+                        21 de
                         noviembre de 2018.</li>
                     <li> Leedham-Green, Elisabeth (26 de septiembre de 1996). A Concise History of the University of
                         Cambridge (en inglés). Cambridge University Press. ISBN 9780521439787. Consultado el 21 de
                         noviembre de 2018.</li>
                     <li> «Charles Babbage'S Computer Engines». 30 de abril de 2013. Consultado el 21 de noviembre de
                         2018.</li>
-                    <li> «Dictionary of National Biography» |url= incorrecta con autorreferencia (ayuda). Wikipedia (en
+                    <li> «Dictionary of National Biography» |url= incorrecta con autorreferencia (ayuda). Wikipedia
+                        (en
                         inglés). 2 de octubre de 2018. Consultado el 21 de noviembre de 2018.</li>
                 </ol>
             </div>
-            <div>
-                <h3 id="Bibliografia">Bibliografia</h3>
-                <ul>
-                    <li>Guijarro, V.; González, L. (2010). La quimera del autómata matemático. Del calculador medieval a
+            <div class="babbage__main__referencias__bibliografia">
+                <h3 class="babbage__main__referencias__bibliografia__titulo" id="Bibliografia">Bibliografia</h3>
+                <ul class="babbage__main__referencias__bibliografia__lista-desordenada">
+                    <li>Guijarro, V.; González, L. (2010). La quimera del autómata matemático. Del calculador
+                        medieval a
                         la máquina analítica de Babbage. Cátedra. ISBN 978-84-376-2653-6.</li>
                     <li>Singh, Simon. Los Códigos Secretos: El arte y la ciencia de la criptografía desde el antiguo
                         Egipto a la era Internet. Debate. ISBN 84-8306-278-X.</li>
                 </ul>
             </div>
-            <footer>
+            <footer class="babbage__main__referencias__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
-        <article>
-            <h2 id="Enlaces-externos">Enlaces externos</h2>
+        <article class="babbage__main__enlaces-externos">
+            <h2 class="babbage__main__enlaces-externos__titulo" id="Enlaces-externos">Enlaces externos</h2>
             <hr>
-            <ul>
+            <ul class="babbage__main__enlaces-externos__lista-desordenada">
                 <li> Wikimedia Commons alberga una galería multimedia sobre Charles Babbage.</li>
                 <li> Wikiquote alberga frases célebres de o sobre Charles Babbage.</li>
             </ul>
-            <footer>
+            <footer class="babbage__main__enlaces-externos__footer">
                 <a href="#inicio">Volver al inicio</a>
             </footer>
         </article>
