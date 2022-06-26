@@ -13,6 +13,13 @@ header h1{
     font-size: 4rem;
     text-align: center;
 }
+header div{
+    float: left;
+    padding: 2rem 2rem;
+}
+#logo{
+    width: 100px;
+}
 #nav{
     text-align: center;
 }
