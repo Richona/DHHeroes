@@ -2,15 +2,16 @@ body.babbage{
 
 }
 .babbage__main{
-
+    margin: 1rem;
 }
 
 /* TITULO */
 .babbage__main__titulo{
-
+    font-size: 48px;
+    margin: 0;
 }
 .babbage__main__titulo__imagen{
-
+    width: 200px;
 }
 
 /* PRESENTACION */

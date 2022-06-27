@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @import "./general.css";
 @import "./babbage.css";
 @import "./berners.css";
@@ -6,3 +7,33 @@
 @import "./hopper.css";
 @import "./loverace.css";
 @import "./turing.css";
+
+
+.index__main{
+    text-align: center;
+}
+
+.index__main__articulos__heroes{
+    border: 2rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.index__main__img{
+    width: 500px;
+    height: 500px;
+    padding: 4px;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 2rem
+}
+.index__main__articulos__heroes{
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+.index__main__articulos__heroes:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
